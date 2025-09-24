@@ -1,0 +1,27 @@
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Environnements virtuels
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Cache et config éditeur
+.idea/
+.vscode/
+*.DS_Store
+
+# Base de données locale (si SQLite par exemple)
+*.sqlite3
