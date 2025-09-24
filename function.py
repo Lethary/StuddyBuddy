@@ -1,7 +1,7 @@
 from tkinter import filedialog
-import tkinter as tk
-from google import genai
+from google-generativeai import genai
 from google.genai.types import Tool, GenerateContentConfig
+import tkinter as tk
 
 client = genai.Client()
 model_id = "gemini-2.5-flash-lite"
