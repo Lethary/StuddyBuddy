@@ -37,6 +37,6 @@ L’objectif est de transformer des notes brutes en ressources claires, synthét
 ## Technologies  
 
 - **Backend / Génération IA** : Python  
-- **Frontend** : Interface web (Flask/Django + HTML/CSS/JS)   
+- **Frontend** : Interface web (Django + HTML/CSS/JS)   
 - **API IA** : Google Gemini via Google Generative AI SDK
 - **Base de données** : MariaDB/MySQL
