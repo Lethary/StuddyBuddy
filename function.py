@@ -1,5 +1,5 @@
 from tkinter import filedialog
-from google-generativeai import genai
+import google.genai as genai
 from google.genai.types import Tool, GenerateContentConfig
 import tkinter as tk
 
