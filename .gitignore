@@ -26,4 +26,3 @@ ENV/
 # Base de données locale (si SQLite par exemple)
 *.sqlite3
 deploy.php
-test.php
