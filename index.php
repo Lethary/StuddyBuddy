@@ -15,7 +15,7 @@
 
     </main>
     <footer>
-        
+        <p>© 2024 StuddyBuddy. All rights reserved.</p>
     </footer>
 </body>
 
