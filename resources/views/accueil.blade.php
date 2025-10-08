@@ -1,22 +1,49 @@
 @extends('layouts.app')
 
-@section('title', 'StuddyBuddy - Accueil')
+@section('title', 'Accueil')
 
 @section('content')
-  <p>Chaque année, les élèves de troisième des collèges des Deux-Sèvres se retrouvent pour démontrer leur créativité et leurs compétences en technologie à travers le <strong>Concours de Robots</strong>. 
-  Cet événement unique permet aux collégiens de concevoir, programmer et présenter des robots capables de relever différentes épreuves techniques et ludiques.</p> 
+<div class="container">
 
-  <h2>Sur ce site, vous pouvez :</h2>
-  <ul>
-      <li><strong>Inscrire vos équipes</strong> si vous êtes professeur de technologie ;</li>
-      <li><strong>Consulter les résultats</strong> et les classements après le concours ;</li>
-      <li><strong>Découvrir les équipes</strong> et leurs projets via leurs sites de présentation ;</li>
-      <li><strong>Accéder aux informations générales</strong> sur le concours et ses épreuves.</li>
-  </ul>
+    <!-- Titre et slogan -->
+    <header>
+        <h1>Bienvenue sur StudyBuddy 📚</h1>
+        <p>Transformez vos notes en fiches de révision interactives et efficaces !</p>
+    </header>
 
-  <p>Le concours valorise à la fois la performance technique des robots et la créativité des équipes. Chaque épreuve est notée selon un barème précis et peut inclure des <strong>bonus</strong> pour 
-  départager les ex aequo. Les équipes peuvent choisir les épreuves auxquelles elles souhaitent participer, ce qui permet à chacun de montrer ses points forts.</p>
+    <!-- Boutons principaux -->
+    <div class="grid">
+        @if(Auth::check())
+            <a href="{{ route('fiches.index') }}" class="primary">Mes fiches 📝</a>
+            <a href="{{ route('qcm.index') }}" class="secondary">Réviser 🎯</a>
+            <a href="{{ route('fiches.share') }}" class="secondary">Partager 🔗</a>
+        @else
+            <a href="{{ route('login') }}" class="primary">Connexion 🔑</a>
+            <a href="{{ route('register') }}" class="secondary">Créer un compte 🆕</a>
+        @endif
+    </div>
 
-  <p>Que vous soyez <strong>élève, enseignant ou simple visiteur</strong>, explorez les résultats, admirez les projets des collégiens et plongez dans l’univers fascinant de la robotique !</p>
+    <!-- Présentation rapide -->
+    <section>
+        <h2>Ce que vous pouvez faire :</h2>
+        <ul>
+            <li>📝 Créer vos fiches de révision à partir de vos cours</li>
+            <li>🤖 Utiliser l’IA pour générer des résumés et points clés</li>
+            <li>🎯 Tester vos connaissances avec des QCM et questions ouvertes</li>
+            <li>🔗 Partager vos fiches avec vos camarades</li>
+            <li>📊 Suivre votre progression et consulter l’historique</li>
+        </ul>
+    </section>
+
+    <!-- Avantages -->
+    <section>
+        <h2>Pourquoi utiliser StudyBuddy ?</h2>
+        <ul>
+            <li>Organiser vos fiches par matière et chapitre 📚</li>
+            <li>Personnaliser les prompts pour des QCM sur mesure ✏️</li>
+            <li>Partager facilement vos ressources avec vos camarades 👥</li>
+        </ul>
+    </section>
+
+</div>
 @endsection
- 

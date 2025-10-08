@@ -11,6 +11,11 @@ class PageController extends Controller
         return view('accueil');
     }
 
+    public function home()
+    {
+        return view('accueil');
+    }
+
     public function fiche()
     {
         return view('fiche');

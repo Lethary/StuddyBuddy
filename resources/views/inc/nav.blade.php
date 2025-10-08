@@ -3,10 +3,10 @@
     <li><strong>Studdy Buddy</strong></li>
   </ul>
   <ul>
-    <li><a href="/">Accueil</a></li>
-    <li><a href="/fiche">Mes fiches</a></li>
-    <li><a href="/reviser">Réviser</a></li>
-    <li><a href="/partager">Partager</a></li>
+    <li><a href="{{ route('home') }}">Accueil</a></li>
+    <li><a href="{{ route('fiche') }}">Mes fiches</a></li>
+    <li><a href="{{ route('reviser') }}">Réviser</a></li>
+    <li><a href="{{ route('partager') }}">Partager</a></li>
   </ul>
   @auth
     <li>
