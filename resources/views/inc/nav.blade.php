@@ -6,7 +6,7 @@
   <ul>
     <li>
       <button class="contrast">
-        <a href="{{ route('home') }}">Accueil</a>
+        <a href="#">Accueil</a>
       </button>
     </li>
 
@@ -28,7 +28,7 @@
 
     <li>
       <button class="contrast">
-        <a href="{{ route('classement') }}">Classements</a>
+        <a href="#">Classements</a>
       </button>
     </li>
 
