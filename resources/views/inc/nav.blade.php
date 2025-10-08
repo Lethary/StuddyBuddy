@@ -3,7 +3,7 @@
   <ul>
     <li><strong>Studdy Buddy</strong></li>
   </ul>
-  @auth
+  
   <ul>
     <li><a href="/">Accueil</a></li>
     <li><a href="/fiche">Mes fiches</a></li>
@@ -12,6 +12,14 @@
     <li>
       <button class="contrast">
         <a href="">Déconnexion</a>
+      </button>
+    </li>
+  </ul>
+  @auth
+  <ul>
+    <li>
+      <button class="contrast">
+        <a href="">Deconnexion</a>
       </button>
     </li>
   </ul>
