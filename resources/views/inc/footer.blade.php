@@ -1,3 +1,11 @@
-<footer class="footer" role="contentinfo">
-    <center><p>Tout droits réservés. Concours de robots inter-collèges - 2025</p></center>  
+<footer>
+    <p>
+        &copy; 2025 - StuddyBuddy - Tous droits réservés.
+    </p>
+    <p>
+        Développé par <a href="https://boudetk.fr" target="_blank">Kévin Boudet</a>.
+    </p>
+    <p>
+        A but éducatif et non commercial.
+    </p>
 </footer>
