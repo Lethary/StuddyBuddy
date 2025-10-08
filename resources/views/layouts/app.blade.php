@@ -15,6 +15,7 @@ body {
   <div class="website">
     <header class="header" role="banner">
       @include('inc.nav')
+      @yield('header')
     </header>
 
     <main id="main" role="main" class="main">
