@@ -1,5 +1,7 @@
 <nav>
-  <ul>
+  
+    @auth
+    <ul>
     <li><strong>Concours Robot</strong></li>
   </ul>
 
@@ -76,7 +78,6 @@
         </ul>
       </details>
     </li>
-    @auth
     <li>
       <button class="contrast">
         <a href="">Déconnexion</a>

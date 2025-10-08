@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Accueil')
+@section('title', 'StuddyBuddy - Accueil')
 
 @section('content')
   <p>Chaque année, les élèves de troisième des collèges des Deux-Sèvres se retrouvent pour démontrer leur créativité et leurs compétences en technologie à travers le <strong>Concours de Robots</strong>. 
@@ -19,3 +19,4 @@
 
   <p>Que vous soyez <strong>élève, enseignant ou simple visiteur</strong>, explorez les résultats, admirez les projets des collégiens et plongez dans l’univers fascinant de la robotique !</p>
 @endsection
+ 
