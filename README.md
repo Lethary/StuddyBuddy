@@ -1,61 +1,53 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📘 StudyBuddy – Assistant de révision pour étudiants
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## ✨ Description
 
-## About Laravel
+**StudyBuddy** est un outil hybride composé de :  
+- 🌐 Une **interface web** ([studdy.boudetk.fr](https://studdy.boudetk.fr/)) : consulter, modifier, organiser et partager ses fiches de révision.  
+- 🐍 Une **application Python** : importer ses cours (copier/coller ou fichiers) et générer automatiquement des fiches de révision + QCM grâce à l’IA.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+🎯 Objectif : transformer des notes brutes en ressources claires, synthétiques et interactives, pour favoriser un apprentissage actif et efficace.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ⚙️ Fonctionnalités principales
 
-## Learning Laravel
+### 🐍 Application Python
+- 📥 **Import de cours** : coller ou importer un texte brut.  
+- ✍️ **Génération de fiches** : résumé structuré par l’IA (définitions, points clés, exemples).  
+- ❓ **Questions d’entraînement** : 5 questions par fiche (QCM et ouvertes).  
+- 🔗 **Envoi vers la base** : les fiches et QCM générés sont stockés dans la base pour être accessibles via l’interface web.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 🌐 Interface Web
+- 📖 **Consultation** : accéder à toutes ses fiches sauvegardées.  
+- 📝 **Modification** : éditer ou enrichir une fiche existante.  
+- 🗂️ **Organisation** : ranger ses fiches par **matière**, **chapitre**, ou catégorie.  
+- 🤝 **Partage** : mettre ses fiches à disposition d’autres étudiants.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 👥 Gestion des rôles et permissions
 
-## Laravel Sponsors
+- 🎓 **Élève** : crée et consulte ses fiches, génère des QCM.  
+- 👨‍🏫 **Gestionnaire** : supervise les fiches et les prompts des élèves pour éviter abus/erreurs.  
+- 🛠️ **Administrateur** : gère l’ensemble du système (comptes, rôles, fiches, prompts, pages d’administration, gestion des fiches, etc.).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+🔒 Le système repose sur des **permissions liées aux rôles et aux pages** (ex. pages d’administration, pages de gestion des fiches, etc.).
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Évolutions prévues
 
-## Contributing
+- 📜 **Historique** : conserver plusieurs versions d’une fiche.  
+- 📊 **Suivi de progression** : stats sur révisions et résultats QCM.  
+- 🎨 **Personnalisation des prompts** : chaque élève pourra modifier les consignes données à l’IA pour créer des fiches/QCM adaptés.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🛠️ Technologies
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- ⚙️ **Backend / Génération IA** : Python  
+- 🌐 **Frontend Web** : PHP + HTML/CSS (JavaScript prévu plus tard)  
+- 🤖 **API IA** : Google Gemini (via Google Generative AI SDK)  
+- 🗄️ **Base de données** : MariaDB / MySQL
+- ☁️ **Hébergement** : o2switch (France)
